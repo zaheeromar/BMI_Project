@@ -38,7 +38,7 @@
             <br /><asp:Label ID="weightLabel" runat="server" Text="Enter your weight in kilograms: "></asp:Label>
             <asp:TextBox ID="weightTextBox" runat="server"></asp:TextBox><br />
 
-            <br /><asp:Button ID="Calculate" runat="server" Text="Calculate" OnClick="Button1_Click" /><br />
+            <br /><asp:Button ID="Calculate" runat="server" Text="Calculate" cssclass="btn-primary" OnClick="Button1_Click" /><br />
         </div>
         <div class="col-sm-4">
             <br /><asp:Label ID="Output" runat="server" Text=""></asp:Label>

@@ -1,15 +1,22 @@
 ﻿
-.container
-{
+.container{
    
 }
 
-.jumbotron 
-{
-    text-align : right;
+.jumbotron {
+    text-align: center;
 }
 
 body {
     margin-top: 10px;
     background-color: #DCDDD8;
+    font-family: 'Philosopher', sans-serif;
+}
+
+.btn-primary {
+    color: aliceblue;
+}
+
+.btn-primary:hover {
+    color: coral;
 }
