@@ -17,6 +17,6 @@ public partial class _Default : System.Web.UI.Page
         double BMI = Math.Round((weight / height) / height, 2);
 
 
-        Output.Text = "You are a " + genderSelected + " of age " + age + " and your BMI is :" + BMI;
+        Output.Text = "Gender: " + genderSelected + "<br/>Age: " + age + "<br/><b>BMI: " + BMI + "</b>";
     }
 }

@@ -29,7 +29,6 @@
         <asp:TextBox ID="weightTextBox" runat="server"></asp:TextBox><br />
 
 
-
         <br /><asp:Button ID="Calculate" runat="server" Text="Calculate" OnClick="Button1_Click" /><br />
         <br /><asp:Label ID="Output" runat="server" Text=""></asp:Label>
     </div>
