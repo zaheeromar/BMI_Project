@@ -45,7 +45,7 @@
             <br /><asp:Label ID="Output" runat="server" Text=""></asp:Label>
         </div>
         <div class="col-sm-4">
-
+            <img src="cinqueterre.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236"/>
         </div>
     </form>
 </body>
