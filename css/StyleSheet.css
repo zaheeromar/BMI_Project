@@ -1,7 +1,12 @@
 ﻿
 .container
 {
-    background-color :darkgray;
+   
+}
+
+.jumbotron 
+{
+    text-align : right;
 }
 
 body {

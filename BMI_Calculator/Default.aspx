@@ -7,23 +7,20 @@
     <title></title>
     <link href="../Content/bootstrap.min.css" rel="stylesheet" />
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="../Scripts/bootstrap.min.js"></script>
     <link href="../css/StyleSheet.css" rel="stylesheet" />
-
 </head>
 
 <body>
     <form id="form1" runat="server">
     <div class ="container">
         <div class ="jumbotron">
-            <div class ="text-center">
                 <h1>BMI Calculator</h1><br />
-            </div>
         </div>
         <div class="col-sm-4">
             <asp:Label ID="genderLabel" runat="server" Text="Please select your gender:"></asp:Label>
@@ -49,6 +46,7 @@
         <div class="col-sm-4">
             <asp:Image ID="Image1" runat="server" Height="450px" ImageUrl="~/images/h9991024.gif" Width="300px" Visible="False" />
         </div>
+      </div>
     </form>
 </body>
 </html>
