@@ -28,8 +28,8 @@
 
 
 
-        <asp:Button ID="Calculate" runat="server" Text="Calculate" OnClick="Button1_Click" /><br />
-        <asp:Label ID="Output" runat="server" Text=""></asp:Label>
+        <br /><asp:Button ID="Calculate" runat="server" Text="Calculate" OnClick="Button1_Click" /><br />
+        <br /><asp:Label ID="Output" runat="server" Text=""></asp:Label>
     </div>
     </form>
 </body>
