@@ -19,7 +19,7 @@
     <form id="form1" runat="server">
     <div class ="container">
         <div class ="jumbotron">
-            <div class ="page-header">
+            <div class ="text-center">
                 <h1>BMI Calculator</h1><br />
             </div>
         </div>

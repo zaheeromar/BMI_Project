@@ -7,16 +7,24 @@ using System.Web.UI.WebControls;
 
 public partial class _Default : System.Web.UI.Page
 {
+    String genderSelected;
+    int age;
+    double height;
+    double weight;
+    double BMI;
 
     protected void Button1_Click(object sender, EventArgs e)
     {
-        String genderSelected = RadioButtonList1.SelectedValue;
-        int age = Int32.Parse(ageTextBox.Text);
-        double height = Double.Parse(heightTextBox.Text);
-        double weight = Double.Parse(weightTextBox.Text);
-        double BMI = Math.Round((weight / height) / height, 2);
+        genderSelected = RadioButtonList1.SelectedValue;
+        age = Int32.Parse(ageTextBox.Text);
+        height = Double.Parse(heightTextBox.Text);
+        weight = Double.Parse(weightTextBox.Text);
+        BMI = Math.Round((weight / height) / height, 2);
+        calculateBMI();
+    }
 
-
+    public void calculateBMI()
+    {
         Output.Text = "Gender: " + genderSelected + "<br/>Age: " + age + "<br/><b>BMI: " + BMI + "</b>";
         Image1.Visible = true;
     }
