@@ -7,11 +7,11 @@ using System.Web.UI.WebControls;
 
 public partial class _Default : System.Web.UI.Page
 {
-    String genderSelected;
-    int age;
-    double height;
-    double weight;
-    double BMI;
+    private String genderSelected;
+    private int age;
+    private double height;
+    private double weight;
+    private double BMI;
 
     protected void Button1_Click(object sender, EventArgs e)
     {
