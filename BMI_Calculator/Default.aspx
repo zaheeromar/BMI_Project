@@ -14,6 +14,7 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="../Scripts/bootstrap.min.js"></script>
     <link href="../css/StyleSheet.css" rel="stylesheet" />
+    <script src="../Scripts/canvasjs.min.js"></script>
 </head>
 
 <body>
@@ -45,6 +46,7 @@
         </div>
         <div class="col-sm-4">
             <asp:Image ID="Image1" runat="server" Height="500px" ImageUrl="~/images/h9991024.gif" Width="350px" Visible="False" />
+
         </div>
       </div>
     </form>
