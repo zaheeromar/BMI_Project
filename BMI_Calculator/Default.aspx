@@ -31,21 +31,21 @@
             </asp:RadioButtonList><br />
         
             <asp:Label ID="ageLabel" runat="server" Text="Enter age:"></asp:Label><br />
-            <asp:TextBox ID="ageTextBox" runat="server"></asp:TextBox><br />
+            <asp:TextBox ID="ageTextBox" runat="server" CssClass ="textbox"></asp:TextBox><br />
 
             <br /><asp:Label ID="heightLabel" runat="server" Text="Enter height in meters: "></asp:Label><br />
-            <asp:TextBox ID="heightTextBox" runat="server"></asp:TextBox><br />
+            <asp:TextBox ID="heightTextBox" runat="server" CssClass ="textbox"></asp:TextBox><br />
 
             <br /><asp:Label ID="weightLabel" runat="server" Text="Enter weight in kilograms: "></asp:Label><br />
-            <asp:TextBox ID="weightTextBox" runat="server"></asp:TextBox><br />
+            <asp:TextBox ID="weightTextBox" runat="server" CssClass ="textbox"></asp:TextBox><br />
 
             <br /><asp:Button ID="Calculate" runat="server" Text="Calculate" cssclass="btn-primary" OnClick="Button1_Click" /><br />
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-3">
             <br /><asp:Label ID="Output" runat="server" Text=""></asp:Label>
         </div>
-        <div class="col-sm-4">
-            <asp:Image ID="Image1" runat="server" Height="500px" ImageUrl="~/images/h9991024.gif" Width="350px" Visible="False" />
+        <div class="col-sm-5">
+            <asp:Image ID="Image1" runat="server" Height="350px"  Width="450px" ImageUrl="~/images/BMI_chart.gif" Visible="False" />
 
         </div>
       </div>
