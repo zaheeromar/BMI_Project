@@ -21,6 +21,9 @@ public partial class _Default : System.Web.UI.Page
         weight = Double.Parse(weightTextBox.Text);
         BMI = Math.Round((weight / height) / height, 2);
         calculateBMI();
+
+        ClientScript.RegisterStartupScript(GetType(), "draw", "true");
+
     }
 
     public void calculateBMI()
