@@ -15,6 +15,7 @@
     <script src="../Scripts/bootstrap.min.js"></script>
     <link href="../css/StyleSheet.css" rel="stylesheet" />
     <script src="../Scripts/canvasjs.min.js"></script>
+    <script src="../Scripts/chartScript.js"></script>
 </head>
 
 <body>
@@ -45,9 +46,11 @@
             <br /><asp:Label ID="Output" runat="server" Text=""></asp:Label>
         </div>
         <div class="col-sm-5">
+                            <div id="chartContainer" style="height: 400px; width: 100%;">
+                            </div>
+                       
             <asp:Image ID="Image1" runat="server" Height="350px"  Width="450px" ImageUrl="~/images/BMI_chart.gif" Visible="False" />
 
-        </div>
       </div>
     </form>
 </body>
