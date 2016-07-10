@@ -53,8 +53,7 @@
         </div>
 
         <div class="col-sm-4">
-                            <div id="chartContainer" style="height: 400px; width: 100%;">
-                            </div>
+            <div id="chartContainer" style="height: 400px; width: 100%;"></div>
                        
             <asp:Image ID="Image1" runat="server" Height="350px"  Width="450px" ImageUrl="~/images/BMI_chart.gif" Visible="False" />
 
