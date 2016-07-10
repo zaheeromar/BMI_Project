@@ -22,7 +22,7 @@ public partial class _Default : System.Web.UI.Page
         BMI = Math.Round((weight / height) / height, 2);
         calculateBMI();
 
-        ClientScript.RegisterStartupScript(GetType(), "draw", "true");
+        ClientScript.RegisterStartupScript(GetType(), "draw", "draw");
 
     }
 

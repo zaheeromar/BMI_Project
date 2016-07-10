@@ -1,15 +1,17 @@
 ﻿
-.container{
-   
-}
-
 .jumbotron {
     text-align: center;
+}
+
+.heading{
+    background: #D74B4B;
+    color: #fff;
 }
 
 body {
     margin-top: 10px;
     background-color: #DCDDD8;
+    font-size: larger;
     font-family: 'Philosopher', sans-serif;
 }
 
@@ -28,7 +30,8 @@ body {
     border-radius: 30px; 
     outline:0; 
     height:25px; 
-    width: 175px; 
+    width: 50px; 
     padding-left:10px; 
-    padding-right:10px; 
+    padding-right:10px;
+    display: inline;
   } 
