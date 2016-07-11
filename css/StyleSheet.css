@@ -10,8 +10,8 @@
 body {
     margin-top: 10px;
     background-color: #DCDDD8;
-    font-size: larger;
     font-family: 'Philosopher', sans-serif;
+    font-size: larger;
 }
 
 .btn-primary {
