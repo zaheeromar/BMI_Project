@@ -1,4 +1,4 @@
-﻿ draw = function (BMI) {
+﻿ draw = function (height, weight, BMI) {
     
     var chart = new CanvasJS.Chart("chartContainer", {
         title:{
@@ -8,7 +8,9 @@
 		{
 		    type: "column",
 		    dataPoints: [
-				{ label: "BMI", y: parseFloat(BMI) },
+                { label: "Height", y: parseFloat(height) },
+		        { label: "Weight", y: parseFloat(weight) },
+                { label: "BMI", y: parseFloat(BMI) }
 		    ]
 		}
         ]
