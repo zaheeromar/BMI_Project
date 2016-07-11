@@ -50,13 +50,11 @@
 
         <div class="col-sm-4">
             <br /><asp:Label ID="Output" runat="server" Text=""></asp:Label>
+            <asp:Image ID="Image1" runat="server" Height="250px"  Width="350px" ImageUrl="~/images/BMI_chart.gif" Visible="false" />
         </div>
 
         <div class="col-sm-4">
-            <div id="chartContainer" style="height: 400px; width: 100%;"></div>
-                       
-            <asp:Image ID="Image1" runat="server" Height="350px"  Width="450px" ImageUrl="~/images/BMI_chart.gif" Visible="False" />
-
+            <div id="chartContainer" style="height: 400px; width: 100%;"></div
         </div>
       </div>
     </form>
