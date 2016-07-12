@@ -54,7 +54,9 @@
         </div>
 
         <div class="col-sm-4">
-            <div id="chartContainer" style="height: 400px; width: 100%;"></div
+            <div id="noDataPlaceholder" class="h1"></div>
+            <div id="chartContainer" style="height: 375px; width: 100%;"></div>
+            <div id="chartPlaceholder"></div>
         </div>
       </div>
     </form>

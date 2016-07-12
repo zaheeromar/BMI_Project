@@ -8,7 +8,7 @@ using System.Web.UI.WebControls;
 public partial class _Default : System.Web.UI.Page
 {
     private String genderSelected;
-    private int age;
+    private double age;
     private double height;
     private double weight;
     private double BMI;
@@ -16,14 +16,27 @@ public partial class _Default : System.Web.UI.Page
     protected void Button1_Click(object sender, EventArgs e)
     {
         genderSelected = RadioButtonList1.SelectedValue;
-        age = Int32.Parse(ageTextBox.Text);
-        height = Double.Parse(heightTextBox.Text);
-        weight = Double.Parse(weightTextBox.Text);
+        age = getData(ageTextBox);
+        height = getData(heightTextBox);
+        weight = getData(weightTextBox);
         BMI = Math.Round((weight / height) / height, 2);
         calculateBMI();
         
         ClientScript.RegisterStartupScript(GetType(), "draw", "draw('" + height + "','" + weight + "','" + BMI + "')", true);
 
+    }
+
+    private double getData(TextBox txtBoxValue)
+    {
+        if (!string.IsNullOrWhiteSpace(txtBoxValue.Text))
+        {
+            return double.Parse(txtBoxValue.Text);
+        }
+        else
+        {
+            txtBoxValue.Text = "0";
+            return 0;
+        }
     }
 
     public void calculateBMI()
