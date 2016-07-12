@@ -8,8 +8,8 @@
 		{
 		    type: "column",
 		    dataPoints: [
-                { label: "Height", y: parseFloat(height) },
-		        { label: "Weight", y: parseFloat(weight) },
+                { label: "Height", y: (parseFloat(height) * 10) },
+		        { label: "Weight", y: (parseFloat(weight) / 10) },
                 { label: "BMI", y: parseFloat(BMI) }
 		    ]
 		}
