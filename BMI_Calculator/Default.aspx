@@ -53,12 +53,12 @@
             <asp:CompareValidator ID="cvweightTextBox" runat="server" ControlToValidate="weightTextBox" Type="Currency"
                                 Operator="DataTypeCheck" Text="*" ErrorMessage="Weight" Display="Static" CssClass="text-danger"></asp:CompareValidator>
             
-            <br /><asp:Button ID="Calculate" runat="server" Text="Calculate" cssclass="btn-primary" OnClick="Button1_Click" />
+            <br /><br /><asp:Button ID="Calculate" runat="server" Text="Calculate" cssclass="btn-primary" OnClick="Button1_Click" />
         </div>
 
         <div class="col-sm-4">
             <div id="noDataPlaceholder" class="h1"></div>
-            <div id="chartContainer" style="height: 375px; width: 100%;"></div>
+            <div id="chartContainer" style="height: 385px; width: 100%;"></div>
             <div class="text-center" >
                 <asp:Label ID="smallPrint" runat="server" Text="*Height and Weight displayed as ratios" Font-Size="Smaller" Visible="False"></asp:Label>
             </div>
@@ -71,7 +71,7 @@
                 <br />
             </div>
             <div class="image">
-                <asp:Image ID="Image1" runat="server" Height="315px" class="img-responsive" Width="450px" ImageUrl="~/images/BMI_chart.gif" Visible="false" align="left"/>
+                <asp:Image ID="Image1" runat="server" Height="325px" class="img-responsive" Width="450px" ImageUrl="~/images/BMI_chart.gif" Visible="false" align="left"/>
             </div>
         </div>
       </div>
