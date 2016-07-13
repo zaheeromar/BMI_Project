@@ -21,7 +21,7 @@
 <body>
     <div class ="container heading">
         <div class ="jumbotron">
-            <h1>Body Mass Index Calculator</h1><br />
+            <h1><b>- Body Mass Index Calculator -</b></h1><br />
         </div>
      </div>
 
