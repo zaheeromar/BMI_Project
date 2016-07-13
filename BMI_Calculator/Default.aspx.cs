@@ -43,5 +43,6 @@ public partial class _Default : System.Web.UI.Page
     {
         Output.Text = "Gender: " + genderSelected + "<br/>Age: " + age + "<br/><b>BMI: " + BMI + "</b>";
         Image1.Visible = true;
+        smallPrint.Visible = true;
     }
 }

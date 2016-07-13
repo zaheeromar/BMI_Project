@@ -17,8 +17,8 @@
 		    {
 		        type: "column",
 		        dataPoints: [
-                    { label: "Height", y: (parseFloat(height) * 10), indexLabelFontColor: "#696969" },
-		            { label: "Weight", y: (parseFloat(weight) / 10), indexLabelFontColor: "#696969" },
+                    { label: "Height*", y: (parseFloat(height) * 10), indexLabelFontColor: "#696969" },
+		            { label: "Weight*", y: (parseFloat(weight) / 2), indexLabelFontColor: "#696969" },
                     { label: "BMI", y: parseFloat(BMI), indexLabelFontColor: "#696969" }
 		        ]
 		    }

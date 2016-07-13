@@ -27,7 +27,7 @@
 
     <form id="form1" runat="server">
        <div class ="container content">
-        <div class="col-sm-4">
+        <div class="col-sm-3">
             
             <asp:Label ID="genderLabel" runat="server" Text="Select your gender:"></asp:Label>
             <asp:RadioButtonList ID="RadioButtonList1" runat="server">
@@ -48,14 +48,22 @@
             <br /><asp:Button ID="Calculate" runat="server" Text="Calculate" cssclass="btn-primary" OnClick="Button1_Click" /><br />
         </div>
 
-        <div class="col-sm-4">
-            <br /><asp:Label ID="Output" runat="server" Text=""></asp:Label>
-            <asp:Image ID="Image1" runat="server" Height="250px"  Width="350px" ImageUrl="~/images/BMI_chart.gif" Visible="false" />
+        <div class="col-sm-5">
+            <div class ="model text-center">
+                <asp:Label ID="Output" runat="server" Text=""></asp:Label>
+                <br />
+            </div>
+            <div class="container image">
+                <asp:Image ID="Image1" runat="server" Height="315px"  Width="415px" ImageUrl="~/images/BMI_chart.gif" Visible="false" align="middle"/>
+            </div>
         </div>
 
         <div class="col-sm-4">
             <div id="noDataPlaceholder" class="h1"></div>
             <div id="chartContainer" style="height: 375px; width: 100%;"></div>
+            <div class="text-center" >
+                <asp:Label ID="smallPrint" runat="server" Text="*Height and Weight displayed as ratios" Font-Size="Smaller" Visible="False"></asp:Label>
+            </div>
             <div id="chartPlaceholder"></div>
         </div>
       </div>
