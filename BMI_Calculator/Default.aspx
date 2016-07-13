@@ -53,17 +53,7 @@
             <asp:CompareValidator ID="cvweightTextBox" runat="server" ControlToValidate="weightTextBox" Type="Currency"
                                 Operator="DataTypeCheck" Text="*" ErrorMessage="Weight" Display="Static" CssClass="text-danger"></asp:CompareValidator>
             
-            <br /><asp:Button ID="Calculate" runat="server" Text="Calculate" cssclass="btn-primary" OnClick="Button1_Click" /><br />
-        </div>
-
-        <div class="col-sm-5">
-            <div class ="model text-center">
-                <asp:Label ID="Output" runat="server" Text=""></asp:Label>
-                <br />
-            </div>
-            <div class="container image">
-                <asp:Image ID="Image1" runat="server" Height="315px"  Width="415px" ImageUrl="~/images/BMI_chart.gif" Visible="false" align="middle"/>
-            </div>
+            <br /><asp:Button ID="Calculate" runat="server" Text="Calculate" cssclass="btn-primary" OnClick="Button1_Click" />
         </div>
 
         <div class="col-sm-4">
@@ -73,6 +63,16 @@
                 <asp:Label ID="smallPrint" runat="server" Text="*Height and Weight displayed as ratios" Font-Size="Smaller" Visible="False"></asp:Label>
             </div>
             <div id="chartPlaceholder"></div>
+        </div>
+
+        <div class="col-sm-5">
+            <div class ="model">
+                <asp:Label ID="Output" runat="server" Text=""></asp:Label>
+                <br />
+            </div>
+            <div class="image">
+                <asp:Image ID="Image1" runat="server" Height="315px" class="img-responsive" Width="450px" ImageUrl="~/images/BMI_chart.gif" Visible="false" align="left"/>
+            </div>
         </div>
       </div>
     </form>
