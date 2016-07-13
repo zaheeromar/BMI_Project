@@ -35,16 +35,24 @@
             <asp:ListItem Value="Female">Female</asp:ListItem>
             </asp:RadioButtonList><br />
             
-
+            <asp:ValidationSummary ID="vs" runat="server" CssClass="alert-danger" HeaderText="Enter only digits in the following fields:" BorderStyle="Solid" BorderWidth="2px" BorderColor="Red" />
+            
             <asp:Label ID="ageLabel" runat="server" Text="Enter age:"></asp:Label><br />
             <asp:TextBox ID="ageTextBox" runat="server" CssClass ="textbox" Width="75px"></asp:TextBox><br />
+            <asp:CompareValidator ID="cvageTextBox" runat="server" ControlToValidate="ageTextBox" Type="Currency"
+                                Operator="DataTypeCheck" Text="*" ErrorMessage="Age" Display="Static" CssClass="text-danger"></asp:CompareValidator>
             
             <br /><asp:Label ID="heightLabel" runat="server" Text="Enter height in meters: "></asp:Label><br />
             <asp:TextBox ID="heightTextBox" runat="server" CssClass ="textbox" Width="75px"></asp:TextBox><br />
+            <asp:CompareValidator ID="cvheightTextBox" runat="server" ControlToValidate="heightTextBox" Type="Currency"
+                                Operator="DataTypeCheck" Text="*" ErrorMessage="Height" Display="Static" CssClass="text-danger"></asp:CompareValidator>
+            
 
             <br /><asp:Label ID="weightLabel" runat="server" Text="Enter weight in kilograms: "></asp:Label><br />
             <asp:TextBox ID="weightTextBox" runat="server" CssClass ="textbox" Width="75px"></asp:TextBox><br />
-
+            <asp:CompareValidator ID="cvweightTextBox" runat="server" ControlToValidate="weightTextBox" Type="Currency"
+                                Operator="DataTypeCheck" Text="*" ErrorMessage="Weight" Display="Static" CssClass="text-danger"></asp:CompareValidator>
+            
             <br /><asp:Button ID="Calculate" runat="server" Text="Calculate" cssclass="btn-primary" OnClick="Button1_Click" /><br />
         </div>
 
