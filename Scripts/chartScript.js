@@ -11,7 +11,7 @@
                 fontColor: "#696969",
                 text: "BMI: " + BMI,
             },
-            animationEnabled: false,
+            animationEnabled: true,
 
             data: [
 		    {

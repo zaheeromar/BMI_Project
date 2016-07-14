@@ -27,14 +27,14 @@
 
     <form id="form1" runat="server">
        <div class ="container content">
-        <div class="col-sm-3">
+           <div class="col-sm-3">
             
             <asp:Label ID="genderLabel" runat="server" Text="Select your gender:"></asp:Label>
             <asp:RadioButtonList ID="RadioButtonList1" runat="server">
             <asp:ListItem Value="Male">Male</asp:ListItem>
             <asp:ListItem Value="Female">Female</asp:ListItem>
             </asp:RadioButtonList><br />
-            
+           
             <asp:ValidationSummary ID="vs" runat="server" CssClass="alert-danger" HeaderText="Enter only digits in the following fields:" BorderStyle="Solid" BorderWidth="2px" BorderColor="Red" />
             
             <asp:Label ID="ageLabel" runat="server" Text="Enter age:"></asp:Label><br />
